@@ -9,8 +9,8 @@ const newArtistArray = artistArray.map((currentArtistObj) => {
   return newArtistObj;
 });
 
-const newSongsArray = songsArray.map((currentSongtObj) => {
-  const newSongObj = { ...currentSongtObj };
+const newSongsArray = songsArray.map((currentSongObj) => {
+  const newSongObj = { ...currentSongObj };
   delete newSongObj.id;
 
   return newSongObj;
@@ -23,3 +23,7 @@ const responseArtists = await db
 
 console.log(responseSongs);
 console.log(responseArtists);
+
+// console.log(newArtistArray);
+// console.log(newSongsArray);
+// console.log(songsArray);

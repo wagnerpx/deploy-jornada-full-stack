@@ -6,7 +6,7 @@ import { songsArray } from "../assets/database/songs";
 const Main = ({ type }) => {
   return (
     <div className="main">
-      {/* Item List de Artista */}
+      {/* Item List de Artistas */}
       {type === "artists" || type === undefined ? (
         <ItemList
           title="Artistas"
